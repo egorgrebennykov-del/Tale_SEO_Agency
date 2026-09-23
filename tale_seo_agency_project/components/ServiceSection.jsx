@@ -1,3 +1,5 @@
+import ServiceItem from "./ServiceItem";
+
 export default function ServiceSection() {
   return (
     <div className="services section" id="services">
@@ -18,54 +20,26 @@ export default function ServiceSection() {
                   </p>
                 </div>
               </div>
-              <div className="col-lg-6 col-sm-6">
-                <div className="service-item">
-                  <div className="icon">
-                    <img
-                      src="assets/images/services-01.jpg"
-                      alt="discover SEO"
-                      className="templatemo-feature"
-                    />
-                  </div>
-                  <h4>Discover More on Latest SEO Trends</h4>
-                </div>
-              </div>
-              <div className="col-lg-6 col-sm-6">
-                <div className="service-item">
-                  <div className="icon">
-                    <img
-                      src="assets/images/services-02.jpg"
-                      alt="data analysis"
-                      className="templatemo-feature"
-                    />
-                  </div>
-                  <h4>Real-Time Big Data Analysis</h4>
-                </div>
-              </div>
-              <div className="col-lg-6 col-sm-6">
-                <div className="service-item">
-                  <div className="icon">
-                    <img
-                      src="assets/images/services-03.jpg"
-                      alt="precise data"
-                      className="templatemo-feature"
-                    />
-                  </div>
-                  <h4>Precise Data Analysis &amp; Prediction</h4>
-                </div>
-              </div>
-              <div className="col-lg-6 col-sm-6">
-                <div className="service-item">
-                  <div className="icon">
-                    <img
-                      src="assets/images/services-04.jpg"
-                      alt="SEO marketing"
-                      className="templatemo-feature"
-                    />
-                  </div>
-                  <h4>SEO Marketing &amp; Social Media</h4>
-                </div>
-              </div>
+
+              <ServiceItem
+                imageURL="assets/images/services-01.jpg"
+                title="Discover More on Latest SEO Trends"
+              />
+
+              <ServiceItem
+                imageURL="assets/images/services-02.jpg"
+                title="Real-Time Big Data Analysis"
+              />
+
+              <ServiceItem
+                imageURL="assets/images/services-03.jpg"
+                title="Precise Data Analysis &amp; Prediction"
+              />
+
+              <ServiceItem
+                imageURL="assets/images/services-04.jpg"
+                title="SEO Marketing &amp; Social Media"
+              />
             </div>
           </div>
         </div>
